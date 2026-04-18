@@ -1,0 +1,7 @@
+{
+  "name": "moviemeet",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix Frontend/movie ci --include=dev && npm --prefix Frontend/movie run build -- --outDir ../../dist --emptyOutDir"
+  }
+}
