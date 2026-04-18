@@ -2,6 +2,6 @@
   "name": "moviemeet",
   "private": true,
   "scripts": {
-    "build": "npm --prefix Frontend/movie ci --include=dev && npm --prefix Frontend/movie run build -- --outDir ../../dist --emptyOutDir && node -e \"require('fs').copyFileSync('Frontend/movie/public/_redirects', 'dist/_redirects')\""
+    "build": "npm --prefix Backend ci --include=dev && npm --prefix Frontend/movie ci --include=dev && npm --prefix Frontend/movie run build -- --outDir ../../dist --emptyOutDir && node -e \"require('fs').copyFileSync('Frontend/movie/public/_redirects', 'dist/_redirects')\""
   }
 }
